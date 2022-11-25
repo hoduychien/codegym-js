@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calc">
+            <div class="calc-results">
+                <input type="number" id="result">
+            </div>
+            <div class="calc-list">
+                <div class="calc-btn" onclick="numberClick('1')">
+                    <span>1</span>
+                </div>
+                <div class="calc-btn" onclick="numberClick('2')">
+                    <span>2</span>
+                </div>
+                <div class="calc-btn" onclick="numberClick('3')">
+                    <span>3</span>
+                </div>
+                <div class="calc-btn" onclick="calculate('add')">
+                    <span>+</span>
+                </div>
+                <div class="calc-btn" onclick="numberClick('4')">
+                    <span>4</span>
+                </div>
+                <div class="calc-btn" onclick="numberClick('5')">
+                    <span>5</span>
+                </div>
+                <div class="calc-btn" onclick="numberClick('6')">
+                    <span>6</span>
+                </div>
+                <div class="calc-btn" onclick="calculate('sub')">
+                    <span>-</span>
+                </div>
+                <div class="calc-btn" onclick="numberClick('7')">
+                    <span>7</span>
+                </div>
+                <div class="calc-btn" onclick="numberClick('8')">
+                    <span>8</span>
+                </div>
+                <div class="calc-btn" onclick="numberClick('9')">
+                    <span>9</span>
+                </div>
+                <div class="calc-btn" onclick="calculate('mul')">
+                    <span>x</span>
+                </div>
+                <div class="calc-btn" onclick="clearResults()">
+                    <span>C</span>
+                </div>
+                <div class="calc-btn" onclick="numberClick('0')">
+                    <span>0</span>
+                </div>
+                <div class="calc-btn" onclick="calculate('calc')">
+                    <span>=</span>
+                </div>
+                <div class="calc-btn" onclick="calculate('div')">
+                    <span>/</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
